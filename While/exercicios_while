@@ -1,0 +1,13 @@
+# EX1: Crie um algoritimo que solicite ao usuário uma senha, e só sai do 
+# looping do while quando for digitado a senha corretamente
+
+senha = 'senha@123'
+entrada = ' '
+
+while entrada != senha:
+    entrada = str(input("\nDigite a senha: "))
+    if entrada != senha:
+        print("\nSenha incorreta por favor tente novamente\n")
+
+print("\nConectado\n")
+    

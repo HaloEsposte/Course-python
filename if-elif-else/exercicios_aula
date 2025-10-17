@@ -1,0 +1,75 @@
+"""
+#numero secreto
+
+numero_secreto = 7
+
+numero_digitado = int(input("Tente adivinhar o número secreto entre 1 e 10: "))
+
+if numero_digitado == numero_secreto:
+    print("Parabens você acertou!")
+else:
+    print("Infelizmente você erro o numero secreto era o 7")
+"""
+
+'''
+
+# if - else
+idade = int(input("Digite sua idade: "))
+if idade >= 18:
+    print("Você está liberado para votar")
+else:
+    print("Desculpe a idade minima para votar é de 18 anos")
+
+'''
+
+'''
+# classificar a nota do estudante
+
+nota = int(input("Digite a nota do estudante entre 0 e 100: "))
+
+if (nota >= 90) and (nota <= 100):
+    print("Excelente")
+elif (nota >= 70) and (nota <= 89):
+    print("Bom")
+elif (nota >= 50) and (nota <= 69):
+    print("Satisfatório")
+else:
+    print("Insuficiente")
+
+'''
+'''
+#Calculadora de Descontos
+
+valor_compra = float(input("Digite o valor da sua compra: "))
+
+if valor_compra >= 1000.00:
+    desconto = valor_compra * 0.2
+    valor_compra -= desconto
+    print("Você recebeu 20% de desconto!")
+    
+elif (valor_compra >= 500.00) and (valor_compra < 1000.00):
+    desconto = valor_compra * 0.1
+    valor_compra -= desconto
+    print("Você recebeu 10% de desconto!")
+else:
+    print("Você não recebeu desconto!")
+    
+print(f"Valor do desconto: R$ {desconto:.2f}")
+print(f"Valor final da compra: R$ {valor_compra:.2f}")
+
+'''
+
+
+# Exercicio Par ou impar
+#Crie um algoritimo que solicite a entrada de um número positivo e inteiro e imprimase o 
+#número é PAR ou IMPAR
+
+numero = int(input("Digite um número inteiro positivo: "))
+
+if (numero >= 0) and (numero%2 == 0):
+    print("O numero digitado é par")
+elif (numero >= 0) and (numero%2 != 0):
+    print("O número digitado é impar")
+else:
+    print("número invalido, por favor tente novamente")
+

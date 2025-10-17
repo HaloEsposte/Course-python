@@ -1,0 +1,42 @@
+while True:
+    print("CALCULADORA SIMPLES: ")
+    print("1 - Adição")
+    print("2 - Subtração")
+    print("3 - Multiplicação")
+    print("4 - Divisão")
+    print("5 - Sair")
+    
+    opcao = int(input("Escolha uma opção: "))
+    
+    if opcao == 1:
+        primeiro_numero = float(input("Digite o primeiro número: "))
+        segundo_numero = float(input("Digite o segundo número: "))
+        soma = primeiro_numero + segundo_numero
+        print(f"Resultado: {soma}")
+    
+    elif opcao == 2:
+        primeiro_numero = float(input("Digite o primeiro número: "))
+        segundo_numero = float(input("Digite o segundo número: "))
+        subtracao = primeiro_numero - segundo_numero
+        print(f"Resultado: {subtracao}")
+        
+    elif opcao == 3:
+        primeiro_numero = float(input("Digite o primeiro número: "))
+        segundo_numero = float(input("Digite o segundo número: "))
+        multiplicacao = primeiro_numero * segundo_numero
+        print(f"Resultado: {multiplicacao}")
+        
+    elif opcao == 4:
+        if segundo_numero !=  0:
+            primeiro_numero = float(input("Digite o primeiro número: "))
+            segundo_numero = float(input("Digite o segundo número: "))
+            inteiro = primeiro_numero /segundo_numero
+        else:
+            print("ERRO: Divisão por zero.")
+        print(f"Resultado: {inteiro}")
+        
+    elif opcao == 5:
+        break
+
+    else:
+        print("\nOPÇÃO INVÁLIDA! TENTE NOVAMENTE\n")
